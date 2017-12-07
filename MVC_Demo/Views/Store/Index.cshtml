@@ -1,0 +1,393 @@
+﻿@model IEnumerable<MVC_Demo.ViewModel.Store>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HeadCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.District)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreZip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreTel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreFax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreCompany)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreInvoice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreIP1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreIP2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreIP3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreIP4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreIP5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image01)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image01W)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image01H)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image02)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image02W)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image02H)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image03)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image03W)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image03H)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image04)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image04W)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image04H)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image05)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image05W)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image05H)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Memo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayMode1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayMode2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayMode3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UUid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoogleMapLongi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoogleMapLati)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KeyWords)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorizeEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AreaNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HighAreaNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GeneralDeliveryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractDeliveryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDirect)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HeadCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.District)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreZip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreTel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreFax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreCompany)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreInvoice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreIP1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreIP2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreIP3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreIP4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreIP5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image01)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image01W)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image01H)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image02)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image02W)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image02H)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image03)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image03W)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image03H)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image04)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image04W)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image04H)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image05)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image05W)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image05H)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Memo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayMode1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayMode2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayMode3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UUid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoogleMapLongi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoogleMapLati)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KeyWords)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContractDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorizeEnd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AreaNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HighAreaNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GeneralDeliveryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContractDeliveryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeliveryAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDirect)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
