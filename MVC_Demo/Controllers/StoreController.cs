@@ -14,7 +14,6 @@ namespace MVC_Demo.Controllers
 
         public StoreController() {
             this.StoreModels = new StoreModels();
-
         }
 
         // GET: Store
