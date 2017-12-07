@@ -17,6 +17,7 @@ namespace MVC_Demo.Models
             {
                 List<Store> stores = conn.Query<Store>("select * from Store").ToList();
 
+
                 return stores;
             }
         }
